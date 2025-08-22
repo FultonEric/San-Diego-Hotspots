@@ -1,0 +1,80 @@
+body {
+  font-family: 'Orbitron', sans-serif; /* cyber-futuristic font */
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  color: #00ffe0;
+  padding: 2rem;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.7);
+  border: 2px solid #00ffe0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #00ffe0;
+}
+
+thead {
+  background: rgba(0,0,0,0.9);
+  color: #00ffe0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+}
+
+tbody tr {
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(0,255,224,0.05);
+}
+
+tbody tr:hover {
+  background: rgba(0,255,224,0.2);
+  box-shadow: 0 0 10px #00ffe0;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #00ffe0, #00b3ff);
+  color: #000;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  text-shadow: 0 0 3px #fff;
+  box-shadow: 0 0 10px #00ffe0, 0 0 20px #00b3ff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #00b3ff, #00ffe0);
+  box-shadow: 0 0 20px #00ffe0, 0 0 30px #00b3ff;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+td:hover {
+  text-shadow: 0 0 5px #00ffe0, 0 0 10px #00b3ff;
+}
